@@ -1,16 +1,32 @@
+# apiVersion: v1
+# kind : ReplicationController
+# metadata:
+#   name: myrc100
+# spec:
+#  replicas: 5 # number of pods
+#  template: #pod yaml info
+#     metadata:
+#       labels:
+#        color: blue
+#     spec: 
+#         containers:
+#          - name: mycon2
+#            image: nginx
+#            ports:
+#             - containerPort: 80
 apiVersion: v1
-kind : ReplicationController
-metadata:
-  name: myrc100
+kind: ReplicationController
+metadata: 
+  name: rc500
 spec:
- replicas: 5 # number of pods
- template: #pod yaml info
-    metadata:
+  replicas: 5 # number of pods
+  template: # pod yaml info
+    metadata: 
       labels:
-       color: blue
-    spec: 
-        containers:
-         - name: mycon2
-           image: nginx
-           ports:
+        color: red
+    spec:
+      containers:
+        - name: mycon9
+          image: nginx   # 
+          ports:
             - containerPort: 80
