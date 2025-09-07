@@ -1,21 +1,43 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: deploy500
+#   labels:           # labels for deployment
+#     color: red
+# spec:
+#   replicas: 5       # number of pods
+#   selector:
+#     matchLabels:
+#       color: red
+#   template:         # pod template
+#     metadata:
+#       labels:       # labels for pod
+#         color: red
+#     spec:
+#       containers:
+#         - name: nginx
+#           image: httpd
+#           ports:
+#             - containerPort: 80
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy500
-  labels:           # labels for deployment
-    color: red
+  name: deploy700
+  labels:
+    color: blue
 spec:
-  replicas: 5       # number of pods
-  selector:
+  replicas: 1
+  selector: 
     matchLabels:
-      color: red
-  template:         # pod template
+      color: blue
+  template:
     metadata:
-      labels:       # labels for pod
-        color: red
+      labels:
+        color: blue
     spec:
       containers:
         - name: nginx
-          image: httpd
+          image: apache2
           ports:
             - containerPort: 80
