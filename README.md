@@ -6,3 +6,6 @@ Deployment file
 
 Create a network ( mynetwork ) and create a pod in to the network
 
+
+RC file (REPLICA- CONTROLLORS )
+
