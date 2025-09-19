@@ -40,7 +40,9 @@ note1 - kubectl create secret docker-registry mycred \
 5--    service.yaml   --- kubectl get svc
 
 
-  2 -  kubectl describe svc  svcname 
+  - -  kubectl describe svc  svcname 
+
+   minikube ip:portnum 
 
 
      
