@@ -1,12 +1,15 @@
-Pod.yaml  file ----- to create a pod 
+1--Pod.yaml  file ----- to create a pod 
 
 
-pv.yaml -- for PersistentVolume    
+
+2--pv.yaml -- for PersistentVolume    
 
   command  --kubectl get pv 
 
 
-secrets.yaml  --    kubectl get secrets 
+
+
+3--secrets.yaml  --    kubectl get secrets 
 
 note - secrets name is mycred  and use this into to the pod.yaml with tag --imagePullSecrets:
     - name: mydocker 
@@ -21,7 +24,7 @@ note1 - kubectl create secret docker-registry mycred \
 
 
 
-   for name space 
+4 -   for name space 
 
    ![alt text](<image (1).png>)
 
@@ -32,7 +35,10 @@ note1 - kubectl create secret docker-registry mycred \
 
 
 
-   service.yaml   --- kubectl get svc   
+
+
+5--    service.yaml   --- kubectl get svc
+
 
   2 -  kubectl describe svc  svcname 
 
