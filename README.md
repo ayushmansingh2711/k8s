@@ -12,6 +12,12 @@
 
      command -- kubectl get pvc 
 
+4 -- podwithvolumeyaml  -- attach the volume 
+
+      ![alt text](<Screenshot from 2025-09-22 15-30-34.png>)
+     
+
+
 
 
 
