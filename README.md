@@ -8,6 +8,12 @@
 
 
 
+3 -- pvc.yaml --  PersistentVolumeClaim
+
+     command -- kubectl get pvc 
+
+
+
 
 3--secrets.yaml  --    kubectl get secrets 
 
