@@ -5,7 +5,7 @@ metadata:
   name: mypod2
   labels:
     color: red
-  namespace: pracites   
+  namespace: mynet 
 spec:
   containers:
     - name: mycon
