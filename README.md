@@ -46,7 +46,7 @@ note1 - kubectl create secret docker-registry mycred \
 
 
 
-   the nameSpace is using in pod.yaml 
+   the namespace is using in pod.yaml 
 
    kubectl describe pod podname 
 
